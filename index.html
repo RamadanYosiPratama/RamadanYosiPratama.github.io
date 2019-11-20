@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+    <script src="cart.js"></script>
+    <title>Ardiyanto Supriadi</title>
+  </head>
+  <body>
+    <style>
+      .bagr{
+        background-color: white !important;
+        color: black;
+      }
+      .top{
+        margin-top: 30px;
+        margin-bottom: 30px;
+      }
+      #footer{
+        height: 50px;
+        
+      }
+      .footer2{
+        line-height: 50px;
+      }
+      .cart-column{
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid black;
+        margin-right: 1.5em;
+        margin-bottom: 10px;
+        margin-top: 10px;
+      }
+      .cart-rows{
+        display: flex;
+      }
+      .cart-item{
+        width: 45%;
+      }
+      .cart-price{
+        width: 10%
+        font-size: 1.23em;
+        color: #333;
+      }
+      .cart-quantity{
+        width: 35%;
+      }
+      .cart-item-title{
+        color: #333;
+        margin-left: .5em;
+        font-size: 1.2em;
+      }
+      .cart-item-image{
+        width: 700px;
+        height: auto;
+        border-radius: 10px
+      }
+      .cart-quantity-input{
+        height: 34px;
+        width: 50px;
+        border-radius: 5px;
+        border: 1px solid #56CCF2;
+        background-color: #eee;
+        color: #333;
+        padding: 0;
+        text-align: center;
+        margin-right: 25px;
+      }
+    </style>
+            <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+          <a class="navbar-brand text-white" href="#">Ardiyanto</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link text-white" href="#">Produk<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Catalog</a>
+              </li>
+              
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success my-2 my-sm-0 bagr" type="submit">Search</button>
+            </form>
+          </div>
+        </nav>
+    <!-- end Navbar -->
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="d-block w-100" src="img/2.jpg" alt="First slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="img/an.jpg" alt="Second slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="img/ff.jpg" alt="Third slide">
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+        <!-- End Slider -->
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 top">
+              <div class="card" style="width: 18rem;">
+              <img class="card-img-top shop-item-image" src="images/6.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title shop-item-title">Museum Sambas</h5>
+                <span class="shop-item-price">Rp100000</span>
+                <p class="card-text">Walaupun Sambas kota yang cukup kecil dan berada di ekor pulau Kalimantan, tapi Sambas adalah kota yang berbudaya. Sejak Indonesia belum merdeka sekalipun Kerajaan Kesultanan di Sambas sudah berdiri. Museum ini berada di sisi sungai Sambas yang sangat terkenal. Pada jaman dahulu sungai ini digunakan sebagai jalur transportasi penduduk Sambas</p>
+                <a href="#" class="btn btn-primary shop-item-button">Mari Kita Jalan</a>
+              </div>
+            </div>
+            </div>
+            <div class="col-md-4 top">
+           <div class="card" style="width: 18rem;">
+              <img class="card-img-top shop-item-image" src="images/1.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title shop-item-title">Pantai pakis Karawang</h5>
+                <span class="shop-item-price">Rp100000</span>
+                <p class="card-text">Pantai Tanjung Pakis adalah sebuah pantai yang berada di Kabupaten Karawang, Jawa Barat, tepatnya ada di Desa Tanjung Pakis. Letak pantai ini bisa dibilang sangat jauh dari pusat kota, berjarak sekitar 70 km dari pusat Kabupaten Karawang.
+                  Karena minimnya angkutan umum menuju ke tempat ini dan akses jalan menuju pantai sangat rusak dan berlubang, disarankan untuk menggunakan kendaraan pribadi jika Anda ingin berkunjung ke Pantai Tanjung Pakis..</p>
+                <a href="#" class="btn btn-primary shop-item-button">Mari Kita Jalan</a>
+              </div>
+            </div>               
+            </div>
+            <div class="col-md-4 top">
+              <div class="card" style="width: 18rem;">
+            <img class="card-img-top shop-item-image" src="images/20.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title shop-item-title">Transera Waterpark</h5>
+              <span class="shop-item-price">Rp50000</span>
+              <p class="card-text">Buat kamu yang di Bekasi atau yang sedang berkunjung ke Bekasi jangan lupa untuk bermain di Transera Waterpark Bekasi Kota Harapan Indah. Harga Tiket masuknya juga cukup terjangkau dengan fasilitas wahana permainan yang lengkap.
+                Terletak di Harapan Indah Boulevard Kavling V, Kota Harapan Indah, Kabupaten Bekasi Transera waterpark sangat cocok sebagai tempat alternatif rekreasi keluarga. Menawarkan wahana-wahana menarik dan seru pastinya baik untuk anak-anak maupun orang dewasa.</p>
+              <a href="#" class="btn btn-primary shop-item-button">Mari Kita Jalan</a>
+            </div>
+          </div>
+            </div>
+            <div class="col-md-4 top">
+              <div class="card" style="width: 18rem;">
+              <img class="card-img-top shop-item-image" src="images/4.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title shop-item-title">Mall Aeon</h5>
+                <span class="shop-item-price">Rp100000</span>
+                <p class="card-text">Buat menghibur diri dan keluarga, penghuni Jakarta doyan banget ke mall. Termasuk saya sih, hehehe. Kalo kerjaan lagi hectic, agak stress atau lelah sama macet biasanya pelarian saya adalah makan enak di mall, hahaha. Kalo anak minta main di playground, ya mohon maap kalo kesiangan atau kesorean ya ke mall juga, nyahahaha. Ada satu mall baru di daerah Cakung, Jakarta Timur yang jadi idola meskipun baru dibuka pada bulan September tahun 2017 lalu. Yess tiada lain tiada bukan, AEON Jakarta Garden City, Cakung. Sebenarnya ini bisa juga jadi mall baru para warga Bekasi juga sih, dan bahkan mungkin yang punya akses tol Cilincing-Cakung. Karena ya lumayan kalo lewat tol ngga macet kakaaak..</p>
+                <a href="#" class="btn btn-primary shop-item-button">Mari Kita Jalan</a>
+              </div>
+            </div>
+            </div>
+            <div class="col-md-4 top">
+              <div class="card" style="width: 18rem;">
+              <img class="card-img-top shop-item-image" src="images/5.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title shop-item-title">Dangau Resort Singkawang</h5>
+                <span class="shop-item-price">Rp100000</span>
+                <p class="card-text">Dangau Resort yang terletak di Kota Singkawang cocok untuk kegiatan liburan dan bisnis anda di China Town, Kalimantan Barat. Resort ini menawarkan keramahan untuk membuat anda tenang dan santai selama masa berlibur maupun perjalanan bisnis anda. Dengan berbagai fasilitas membuat momen liburan anda berkesan dan tak terlupakan di kota Singkawang.</p>
+                <a href="#" class="btn btn-primary shop-item-button">Mari Kita Jalan</a>
+              </div>
+            </div>
+            </div>
+            <div class="col-md-4 top">
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top shop-item-image" src="images/7.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title shop-item-title">Pantai Samude Singkawang</h5>
+                <span class="shop-item-price">Rp500000</span>
+                <p class="card-text">Samudra Indah adalah satu di antara pantai yang ada di Kalimantan Barat. Lokasinya di Dusun Tanjung Gundul, Desa Karimunting, Kecamatan Sungai Raya Kepulauan, Kabupaten Bengkayang.
+
+                  Untuk sampai ke pantai ini, pengunjung akan menempuh perjalanan sekitar 3 jam dari Kota Pontianak, dan 30 menit dari Kota Singkawang. Harga tiket tiket masuk Rp 10 ribu pe rorang.
+                  
+                  Pantai dengan hamparan pasir putih ini memanjang dari arah selatan ke timur sekitar 5 kilometer, dan merupakan pantai dari posisi laut Cina Selatan.
+                  
+                  
+                  Untuk memanjakan wisatawan, pengelola menyediakan pondok-pondok kecil yang terbuat dari kayu dengan atap daun yang dibangun di bebatuan yang terhampar di kawasan bibir pantai.
+                  
+                  Di pantai ini juga terdapat pemandian air payau, sehingga pengunjung tidak perlu khawatir untuk membilas badan setelah mandi di air laut yang asin.
+                  
+                  Selain Pantai Samudra Indah, objek wisata lain di pesisir Bengkayang adalah Pantai Kura-kura, yang juga berada di Desa Karimunting. Harga tiket masuk di pantai ini Rp 10 ribu per orang.
+                  
+                  
+                .</p>
+                <a href="#" class="btn btn-primary shop-item-button">Mari Kita Jalan</a>
+              </div>
+            </div>              
+            </div>
+          </div>
+        </div>
+        <!-- End Produk -->
+        <div class="container">
+          <div class="row">
+            <table class="table table-hover">
+              <thead>
+                <tr class="cart-row">
+                  <th scope="col" class="cart-item">Item</th>
+                  <th scope="col" class="cart-price">Price</th>
+                  <th scope="col" class="cart-quantity">Quantity</th>
+                </tr>
+              </thead>
+              <tbody class="cart-items">
+                
+
+
+
+                <div class="cart-total">
+                  <strong class="cart-total-title">Total</strong>
+                  <span class="cart-total-price">Rp0</span>
+                </div>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+
+        <!-- end cart -->
+        <div id="footer" class="bg-dark">
+          <div class="container">
+
+              <p class="text-white text-center" footer2>@copyright RamadanYosi</p>
+        </div>
+      </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
